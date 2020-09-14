@@ -37,4 +37,9 @@ public class WebDriver {
 		return null;
 	}
 
+	public Object navigate() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

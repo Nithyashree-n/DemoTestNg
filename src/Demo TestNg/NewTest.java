@@ -10,6 +10,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+@Test
 public class Newtest{
 
 	static String chromePath, site;
@@ -24,7 +25,6 @@ public class Newtest{
 
 	}
 
-	@Test
 	public void signup() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.id("signin2")).click();
@@ -37,7 +37,6 @@ public class Newtest{
 
 	}
 
-	@Test
 	public void login() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[@id=\"login2\"]")).click();
@@ -48,7 +47,6 @@ public class Newtest{
 
 	}
 
-	@Test
 	public void contact() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
@@ -63,7 +61,6 @@ public class Newtest{
 
 	}
 
-	@Test
 	public void addCart() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.className("nav-link")).click();
@@ -76,7 +73,6 @@ public class Newtest{
 
 	}
 
-	@Test
 	public void validate() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[@id=\"cartur\"]")).click();

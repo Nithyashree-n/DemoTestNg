@@ -17,4 +17,9 @@ public class By {
 		return null;
 	}
 
+	public static Object className(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

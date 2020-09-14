@@ -5,7 +5,12 @@
     <classes>
       <class name="NewTest">
         <methods>
-          <include name="demoblaze"/>
+          <include name="contact"/>
+          <include name="afterMethod"/>
+          <include name="addCart"/>
+          <include name="beforeMethod"/>
+          <include name="signup"/>
+          <include name="login"/>
         </methods>
       </class> <!-- NewTest -->
     </classes>
