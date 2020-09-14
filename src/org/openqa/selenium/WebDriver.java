@@ -27,4 +27,14 @@ public class WebDriver {
 		
 	}
 
+	public Object findElement(Object xpath) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object switchTo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

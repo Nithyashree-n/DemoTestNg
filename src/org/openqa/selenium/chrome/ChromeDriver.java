@@ -17,4 +17,9 @@ public class ChromeDriver {
 		
 	}
 
+	public Object findElement(Object name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
