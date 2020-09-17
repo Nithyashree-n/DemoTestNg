@@ -18,7 +18,7 @@ public class Newtest{
 
 	@BeforeMethod
 	public void beforeMethod() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Webdrivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\nithyashree.n\\Downloads\\chromedriver_win32\\chromedriver.exe ");
 		driver = new ChromeDriver();
 		driver.navigate().to("https://www.demoblaze.com");
 		driver.manage().window().maximize();
@@ -87,7 +87,7 @@ public class Newtest{
 		driver.findElement(By.xpath("//*[@id=\"orderModal\"]/div/div/div[3]/button[2]")).click();
 		Thread.sleep(2000);
 
-		 driver.findElement(By.xpath("/html/body/div[10]/div[7]/div/button")).click();
+	 driver.findElement(By.xpath("/html/body/div[10]/div[7]/div/button")).click();
 		Thread.sleep(2000);
 	}
 

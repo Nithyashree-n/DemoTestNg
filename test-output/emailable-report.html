@@ -9,17 +9,14 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">4</td><td class="num">0</td><td class="num">0</td><td class="num">84</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">4</td><td class="num">0</td><td class="num attn">1</td><td class="num">76</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">NewTest</td><td><a href="#m0">beforeMethod</a></td><td rowspan="1">1600070419885</td><td rowspan="1">6</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="7">NewTest</td><td><a href="#m1">afterMethod</a></td><td rowspan="4">1600070419936</td><td rowspan="4">-1600070419936</td></tr><tr class="skippedeven"><td><a href="#m2">afterMethod</a></td></tr><tr class="skippedeven"><td><a href="#m3">afterMethod</a></td></tr><tr class="skippedeven"><td><a href="#m4">afterMethod</a></td></tr><tr class="skippedeven"><td><a href="#m5">beforeMethod</a></td><td rowspan="3">1600070419910</td><td rowspan="3">-1600070419910</td></tr><tr class="skippedeven"><td><a href="#m6">beforeMethod</a></td></tr><tr class="skippedeven"><td><a href="#m7">beforeMethod</a></td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="4">NewTest</td><td><a href="#m8">addCart</a></td><td rowspan="1">1600070419932</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m9">contact</a></td><td rowspan="1">1600070419922</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m10">login</a></td><td rowspan="1">1600070419912</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m11">signup</a></td><td rowspan="1">1600070419902</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">DataDrivenTest</td><td><a href="#m0">beforeTest</a></td><td rowspan="1">1600331941026</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">DataDrivenTest</td><td><a href="#m1">flightDeals</a></td><td rowspan="1">1600331941007</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="8">DataDrivenTest</td><td><a href="#m2">afterTest</a></td><td rowspan="4">1600331941035</td><td rowspan="4">-1600331941035</td></tr><tr class="skippedeven"><td><a href="#m3">afterTest</a></td></tr><tr class="skippedeven"><td><a href="#m4">afterTest</a></td></tr><tr class="skippedeven"><td><a href="#m5">afterTest</a></td></tr><tr class="skippedeven"><td><a href="#m6">beforeTest</a></td><td rowspan="3">1600331941037</td><td rowspan="3">-1600331941037</td></tr><tr class="skippedeven"><td><a href="#m7">beforeTest</a></td></tr><tr class="skippedeven"><td><a href="#m8">beforeTest</a></td></tr><tr class="skippedeven"><td><a href="#m9">suiteTeardown</a></td><td rowspan="1">1600331941140</td><td rowspan="1">-1600331941140</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="4">DataDrivenTest</td><td><a href="#m10">purgeAllAlerts</a></td><td rowspan="1">1600331941031</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m11">startMonitor</a></td><td rowspan="1">1600331941039</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m12">stopMonitor</a></td><td rowspan="1">1600331941045</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m13">waitForPageLoaded</a></td><td rowspan="1">1600331941051</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">NewTest#beforeMethod</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Error: Unresolved compilation problems: 
-	Type mismatch: cannot convert from ChromeDriver to WebDriver
-	The method to(String) is undefined for the type Object
+<h2>Default test</h2><h3 id="m0">DataDrivenTest#beforeTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Error: Unresolved compilation problem: 
 	The method window() is undefined for the type Object
-	The method timeouts() is undefined for the type Object
 
-	at NewTest.beforeMethod(NewTest.java:36)
+	at DataDrivenTest.beforeTest(DataDrivenTest.java:76)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -53,20 +50,49 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">NewTest#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">NewTest#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">NewTest#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">NewTest#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">NewTest#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">NewTest#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">NewTest#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">NewTest#addCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Error: Unresolved compilation problems: 
-	Type mismatch: cannot convert from ChromeDriver to WebDriver
-	The method to(String) is undefined for the type Object
+<h3 id="m1">DataDrivenTest#flightDeals</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Cannot inject @Test annotated Method [flightDeals] with [class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:437)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:351)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:875)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">DataDrivenTest#afterTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">DataDrivenTest#afterTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">DataDrivenTest#afterTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">DataDrivenTest#afterTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">DataDrivenTest#beforeTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">DataDrivenTest#beforeTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">DataDrivenTest#beforeTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">DataDrivenTest#suiteTeardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">DataDrivenTest#purgeAllAlerts</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Error: Unresolved compilation problem: 
 	The method window() is undefined for the type Object
-	The method timeouts() is undefined for the type Object
 
-	at NewTest.beforeMethod(NewTest.java:36)
+	at DataDrivenTest.beforeTest(DataDrivenTest.java:76)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -100,13 +126,10 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">NewTest#contact</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Error: Unresolved compilation problems: 
-	Type mismatch: cannot convert from ChromeDriver to WebDriver
-	The method to(String) is undefined for the type Object
+<h3 id="m11">DataDrivenTest#startMonitor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Error: Unresolved compilation problem: 
 	The method window() is undefined for the type Object
-	The method timeouts() is undefined for the type Object
 
-	at NewTest.beforeMethod(NewTest.java:36)
+	at DataDrivenTest.beforeTest(DataDrivenTest.java:76)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -140,13 +163,10 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">NewTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Error: Unresolved compilation problems: 
-	Type mismatch: cannot convert from ChromeDriver to WebDriver
-	The method to(String) is undefined for the type Object
+<h3 id="m12">DataDrivenTest#stopMonitor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Error: Unresolved compilation problem: 
 	The method window() is undefined for the type Object
-	The method timeouts() is undefined for the type Object
 
-	at NewTest.beforeMethod(NewTest.java:36)
+	at DataDrivenTest.beforeTest(DataDrivenTest.java:76)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -180,13 +200,10 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">NewTest#signup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Error: Unresolved compilation problems: 
-	Type mismatch: cannot convert from ChromeDriver to WebDriver
-	The method to(String) is undefined for the type Object
+<h3 id="m13">DataDrivenTest#waitForPageLoaded</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Error: Unresolved compilation problem: 
 	The method window() is undefined for the type Object
-	The method timeouts() is undefined for the type Object
 
-	at NewTest.beforeMethod(NewTest.java:36)
+	at DataDrivenTest.beforeTest(DataDrivenTest.java:76)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)

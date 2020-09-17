@@ -1,30 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="4" failed="0" ignored="0" total="4" passed="0">
+<testng-results skipped="4" failed="1" ignored="0" total="5" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="84" started-at="2020-09-14T13:30:19 IST" finished-at="2020-09-14T13:30:19 IST">
+  <suite name="Default suite" duration-ms="76" started-at="2020-09-17T14:09:00 IST" finished-at="2020-09-17T14:09:01 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="84" started-at="2020-09-14T13:30:19 IST" finished-at="2020-09-14T13:30:19 IST">
-      <class name="NewTest">
-        <test-method status="FAIL" signature="beforeMethod()[pri:0, instance:NewTest@67b92f0a]" name="beforeMethod" is-config="true" duration-ms="6" started-at="2020-09-14T13:30:19 IST" finished-at="2020-09-14T13:30:19 IST">
+    <test name="Default test" duration-ms="76" started-at="2020-09-17T14:09:00 IST" finished-at="2020-09-17T14:09:01 IST">
+      <class name="DataDrivenTest">
+        <test-method status="PASS" signature="suiteSetup()[pri:0, instance:DataDrivenTest@47ef968d]" name="suiteSetup" is-config="true" duration-ms="11" started-at="2020-09-17T14:09:00 IST" finished-at="2020-09-17T14:09:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteSetup -->
+        <test-method status="FAIL" signature="flightDeals(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataDrivenTest@47ef968d]" name="flightDeals" duration-ms="0" started-at="2020-09-17T14:09:01 IST" finished-at="2020-09-17T14:09:01 IST">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [flightDeals] with [class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [flightDeals] with [class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:437)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:351)
+at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:875)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightDeals -->
+        <test-method status="FAIL" signature="beforeTest()[pri:0, instance:DataDrivenTest@47ef968d]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-09-17T14:09:01 IST" finished-at="2020-09-17T14:09:01 IST">
           <exception class="java.lang.Error">
             <message>
-              <![CDATA[Unresolved compilation problems: 
-Type mismatch: cannot convert from ChromeDriver to WebDriver
-The method to(String) is undefined for the type Object
+              <![CDATA[Unresolved compilation problem: 
 The method window() is undefined for the type Object
-The method timeouts() is undefined for the type Object
 ]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Error: Unresolved compilation problems: 
-Type mismatch: cannot convert from ChromeDriver to WebDriver
-The method to(String) is undefined for the type Object
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
 The method window() is undefined for the type Object
-The method timeouts() is undefined for the type Object
 
-at NewTest.beforeMethod(NewTest.java:36)
+at DataDrivenTest.beforeTest(DataDrivenTest.java:76)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -62,25 +104,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="signup()[pri:1, instance:NewTest@67b92f0a]" name="signup" duration-ms="0" started-at="2020-09-14T13:30:19 IST" finished-at="2020-09-14T13:30:19 IST">
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="purgeAllAlerts()[pri:0, instance:DataDrivenTest@47ef968d]" name="purgeAllAlerts" duration-ms="0" started-at="2020-09-17T14:09:01 IST" finished-at="2020-09-17T14:09:01 IST">
           <exception class="java.lang.Error">
             <message>
-              <![CDATA[Unresolved compilation problems: 
-Type mismatch: cannot convert from ChromeDriver to WebDriver
-The method to(String) is undefined for the type Object
+              <![CDATA[Unresolved compilation problem: 
 The method window() is undefined for the type Object
-The method timeouts() is undefined for the type Object
 ]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Error: Unresolved compilation problems: 
-Type mismatch: cannot convert from ChromeDriver to WebDriver
-The method to(String) is undefined for the type Object
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
 The method window() is undefined for the type Object
-The method timeouts() is undefined for the type Object
 
-at NewTest.beforeMethod(NewTest.java:36)
+at DataDrivenTest.beforeTest(DataDrivenTest.java:76)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -118,33 +154,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signup -->
-        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:NewTest@67b92f0a]" name="afterMethod" is-config="true" duration-ms="-1600070419906" started-at="2020-09-14T13:30:19 IST" finished-at="1970-01-01T05:30:00 IST">
+        </test-method> <!-- purgeAllAlerts -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:DataDrivenTest@47ef968d]" name="afterTest" is-config="true" duration-ms="-1600331941035" started-at="2020-09-17T14:09:01 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:NewTest@67b92f0a]" name="beforeMethod" is-config="true" duration-ms="-1600070419910" started-at="2020-09-14T13:30:19 IST" finished-at="1970-01-01T05:30:00 IST">
+        </test-method> <!-- afterTest -->
+        <test-method status="SKIP" signature="beforeTest()[pri:0, instance:DataDrivenTest@47ef968d]" name="beforeTest" is-config="true" duration-ms="-1600331941037" started-at="2020-09-17T14:09:01 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="login()[pri:2, instance:NewTest@67b92f0a]" name="login" duration-ms="0" started-at="2020-09-14T13:30:19 IST" finished-at="2020-09-14T13:30:19 IST">
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="startMonitor()[pri:0, instance:DataDrivenTest@47ef968d]" name="startMonitor" duration-ms="0" started-at="2020-09-17T14:09:01 IST" finished-at="2020-09-17T14:09:01 IST">
           <exception class="java.lang.Error">
             <message>
-              <![CDATA[Unresolved compilation problems: 
-Type mismatch: cannot convert from ChromeDriver to WebDriver
-The method to(String) is undefined for the type Object
+              <![CDATA[Unresolved compilation problem: 
 The method window() is undefined for the type Object
-The method timeouts() is undefined for the type Object
 ]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Error: Unresolved compilation problems: 
-Type mismatch: cannot convert from ChromeDriver to WebDriver
-The method to(String) is undefined for the type Object
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
 The method window() is undefined for the type Object
-The method timeouts() is undefined for the type Object
 
-at NewTest.beforeMethod(NewTest.java:36)
+at DataDrivenTest.beforeTest(DataDrivenTest.java:76)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -182,33 +212,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:NewTest@67b92f0a]" name="afterMethod" is-config="true" duration-ms="-1600070419918" started-at="2020-09-14T13:30:19 IST" finished-at="1970-01-01T05:30:00 IST">
+        </test-method> <!-- startMonitor -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:DataDrivenTest@47ef968d]" name="afterTest" is-config="true" duration-ms="-1600331941042" started-at="2020-09-17T14:09:01 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:NewTest@67b92f0a]" name="beforeMethod" is-config="true" duration-ms="-1600070419920" started-at="2020-09-14T13:30:19 IST" finished-at="1970-01-01T05:30:00 IST">
+        </test-method> <!-- afterTest -->
+        <test-method status="SKIP" signature="beforeTest()[pri:0, instance:DataDrivenTest@47ef968d]" name="beforeTest" is-config="true" duration-ms="-1600331941044" started-at="2020-09-17T14:09:01 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="contact()[pri:3, instance:NewTest@67b92f0a]" name="contact" duration-ms="0" started-at="2020-09-14T13:30:19 IST" finished-at="2020-09-14T13:30:19 IST">
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="stopMonitor()[pri:0, instance:DataDrivenTest@47ef968d]" name="stopMonitor" duration-ms="0" started-at="2020-09-17T14:09:01 IST" finished-at="2020-09-17T14:09:01 IST">
           <exception class="java.lang.Error">
             <message>
-              <![CDATA[Unresolved compilation problems: 
-Type mismatch: cannot convert from ChromeDriver to WebDriver
-The method to(String) is undefined for the type Object
+              <![CDATA[Unresolved compilation problem: 
 The method window() is undefined for the type Object
-The method timeouts() is undefined for the type Object
 ]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Error: Unresolved compilation problems: 
-Type mismatch: cannot convert from ChromeDriver to WebDriver
-The method to(String) is undefined for the type Object
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
 The method window() is undefined for the type Object
-The method timeouts() is undefined for the type Object
 
-at NewTest.beforeMethod(NewTest.java:36)
+at DataDrivenTest.beforeTest(DataDrivenTest.java:76)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -246,33 +270,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- contact -->
-        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:NewTest@67b92f0a]" name="afterMethod" is-config="true" duration-ms="-1600070419927" started-at="2020-09-14T13:30:19 IST" finished-at="1970-01-01T05:30:00 IST">
+        </test-method> <!-- stopMonitor -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:DataDrivenTest@47ef968d]" name="afterTest" is-config="true" duration-ms="-1600331941048" started-at="2020-09-17T14:09:01 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:NewTest@67b92f0a]" name="beforeMethod" is-config="true" duration-ms="-1600070419931" started-at="2020-09-14T13:30:19 IST" finished-at="1970-01-01T05:30:00 IST">
+        </test-method> <!-- afterTest -->
+        <test-method status="SKIP" signature="beforeTest()[pri:0, instance:DataDrivenTest@47ef968d]" name="beforeTest" is-config="true" duration-ms="-1600331941050" started-at="2020-09-17T14:09:01 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="addCart()[pri:4, instance:NewTest@67b92f0a]" name="addCart" duration-ms="0" started-at="2020-09-14T13:30:19 IST" finished-at="2020-09-14T13:30:19 IST">
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="waitForPageLoaded()[pri:0, instance:DataDrivenTest@47ef968d]" name="waitForPageLoaded" duration-ms="0" started-at="2020-09-17T14:09:01 IST" finished-at="2020-09-17T14:09:01 IST">
           <exception class="java.lang.Error">
             <message>
-              <![CDATA[Unresolved compilation problems: 
-Type mismatch: cannot convert from ChromeDriver to WebDriver
-The method to(String) is undefined for the type Object
+              <![CDATA[Unresolved compilation problem: 
 The method window() is undefined for the type Object
-The method timeouts() is undefined for the type Object
 ]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Error: Unresolved compilation problems: 
-Type mismatch: cannot convert from ChromeDriver to WebDriver
-The method to(String) is undefined for the type Object
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
 The method window() is undefined for the type Object
-The method timeouts() is undefined for the type Object
 
-at NewTest.beforeMethod(NewTest.java:36)
+at DataDrivenTest.beforeTest(DataDrivenTest.java:76)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -310,12 +328,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addCart -->
-        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:NewTest@67b92f0a]" name="afterMethod" is-config="true" duration-ms="-1600070419936" started-at="2020-09-14T13:30:19 IST" finished-at="1970-01-01T05:30:00 IST">
+        </test-method> <!-- waitForPageLoaded -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:DataDrivenTest@47ef968d]" name="afterTest" is-config="true" duration-ms="-1600331941056" started-at="2020-09-17T14:09:01 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- NewTest -->
+        </test-method> <!-- afterTest -->
+        <test-method status="SKIP" signature="suiteTeardown()[pri:0, instance:DataDrivenTest@47ef968d]" name="suiteTeardown" is-config="true" duration-ms="-1600331941140" started-at="2020-09-17T14:09:01 IST" finished-at="1970-01-01T05:30:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteTeardown -->
+      </class> <!-- DataDrivenTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

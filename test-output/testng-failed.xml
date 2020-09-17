@@ -3,16 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="NewTest">
+      <class name="DataDrivenTest">
         <methods>
-          <include name="contact"/>
-          <include name="afterMethod"/>
-          <include name="addCart"/>
-          <include name="beforeMethod"/>
-          <include name="signup"/>
-          <include name="login"/>
+          <include name="suiteSetup"/>
+          <include name="beforeTest"/>
+          <include name="suiteTeardown"/>
+          <include name="afterTest"/>
+          <include name="purgeAllAlerts"/>
+          <include name="waitForPageLoaded"/>
+          <include name="flightDeals"/>
+          <include name="stopMonitor"/>
+          <include name="startMonitor"/>
         </methods>
-      </class> <!-- NewTest -->
+      </class> <!-- DataDrivenTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
